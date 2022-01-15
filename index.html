@@ -1,0 +1,40 @@
+<html>
+
+<body>
+    <canvas width="1000" height="1000"></canvas>
+
+    <script>
+        let canvas = document.querySelector('canvas');
+        let context = canvas.getContext('2d')
+
+        context.fillStyle = ('red')
+        // context.fillRect(100, 100, 400, 400)
+
+        context.beginPath()
+        context.rect(100, 100, 800, 800)
+        context.moveTo(900, 500)
+        context.arc(500, 500, 400, 0, 2 * Math.PI)
+        context.moveTo(100, 900)
+        context.lineTo(500, 100)
+        context.lineTo(900, 900)
+        context.moveTo(900, 500)
+        context.lineTo(500, 500)
+        // context.moveTo(110, 75)
+        // context.arc(500, 500, 400, 0, 2 * Math.PI)
+        context.stroke()
+
+        context.beginPath()
+        context.arc(500, 500, 400, 0, 2 * Math.PI)
+        context.stroke()
+
+        context.beginPath()
+        context.moveTo(100, 900)
+        context.lineTo(500, 100)
+        context.lineTo(900, 900)
+        context.moveTo(900, 500)
+        context.lineTo(500, 500)
+        context.stroke()
+    </script>
+</body>
+
+</html>
